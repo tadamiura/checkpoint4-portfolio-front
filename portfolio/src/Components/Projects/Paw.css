@@ -1,0 +1,20 @@
+.image-project {
+    height: 250px;
+    width: 250px;
+    margin: 20px auto 20px auto;
+}
+
+.container-project {
+    font-size: 14px;
+    margin: 8em 3em;
+    text-align: center;
+    max-width: none;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.github-project {
+    color: #fff;
+    text-decoration: none;
+}

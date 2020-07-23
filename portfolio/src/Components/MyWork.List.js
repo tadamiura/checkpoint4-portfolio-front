@@ -20,19 +20,13 @@ const MyWorkList = () => {
     return myWorkList === null
         ? <p>Loading</p>
         : (
-            <div>
-                <div>
-                    <BurgerMenu />
-                </div>
-                <div className='myWorkList'>
-                    {myWorkList.map((list,index) => 
+            <div className='myWorkList'>
+                {myWorkList.map((list, index) =>
                     <Link to={list.url_name} className='project-link'>
                         <h2 className='title-project'>{list.project_title}</h2>
-                    <h3 className='stack-duration'>{list.language}<br/>{list.duration}</h3>
+                        <h3 className='stack-duration'>{list.language}<br />{list.duration}</h3>
                     </Link>
-
-                    )}
-                </div>
+                )}
             </div>
         )
 }
