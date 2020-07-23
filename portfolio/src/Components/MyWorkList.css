@@ -1,0 +1,15 @@
+.myWorkList {
+    font-size: 20px;
+    margin: 10em 3em;
+    text-align: center;
+    max-width: none;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    color: #fff
+}
+
+.project-link{
+    text-decoration: none;
+    color: #fff;
+}
