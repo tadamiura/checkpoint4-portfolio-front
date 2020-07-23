@@ -1,13 +1,13 @@
 import React from 'react';
+import BurgerMenu from './Components/BurgerMenu';
 import Home from './Components/Home'
 import MyPresentation from './Components/MyPresentation';
 import MyWorkList from './Components/MyWork.List'
-import Paw from './Components/Projects/Paw'
+import Project from './Components/Projects/Project'
 
 import { Switch, Route } from 'react-router-dom'
 
 import './App.css';
-import BurgerMenu from './Components/BurgerMenu';
 
 const App = () => {
 
@@ -18,7 +18,7 @@ const App = () => {
         <Route exact path="/" component={Home}/>
         <Route path="/worklist" component={MyWorkList}/>
         <Route path="/about" component={MyPresentation}/>
-        <Route path="/paw" component={Paw}/>
+        <Route path="/project" component={Project}/>
       </Switch>
     </div>
   );

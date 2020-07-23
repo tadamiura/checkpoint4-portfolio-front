@@ -1,0 +1,38 @@
+.image-project {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+.container-project {
+    font-size: 14px;
+    margin: 8em 3em;
+    text-align: center;
+    max-width: none;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.github-project {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width:640px) {
+    .image-project {
+        width: 30%;
+        -webkit-filter: sepia(1);
+        filter: sepia(0.8);
+      }
+    .image-project:hover {
+        transform: scale(1.50);
+        transition: all 1200ms;
+        filter:none;
+    }
+    .github-project:hover {
+        color: #a8a9e7;
+        text-decoration: none;
+    }
+  }
