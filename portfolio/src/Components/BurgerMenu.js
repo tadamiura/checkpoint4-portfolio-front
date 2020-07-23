@@ -11,6 +11,7 @@ const BurgerMenu = () => {
             <NavLink to="/worklist" activeClassName="selected" className="list_burger">Work<br/><span>my productions list</span></NavLink>
             <NavLink to="/project" activeClassName="selected" className="list_burger">All<br/><span>projects</span></NavLink>
             <NavLink to="/about" activeClassName="selected" className="list_burger">About<br/><span>me</span></NavLink>
+            <NavLink to="/office" activeClassName="selected" className="list_burger">Office<br/><span>not hidden</span></NavLink>
         </Menu>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import BurgerMenu from './Components/BurgerMenu';
+import FormAboutMe from './Components/Forms/FormAboutMe'
 import Home from './Components/Home'
 import MyPresentation from './Components/MyPresentation';
 import MyWorkList from './Components/MyWork.List'
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/worklist" component={MyWorkList}/>
         <Route path="/about" component={MyPresentation}/>
         <Route path="/project" component={Project}/>
+        <Route path="/office" component={FormAboutMe} />
       </Switch>
     </div>
   );
