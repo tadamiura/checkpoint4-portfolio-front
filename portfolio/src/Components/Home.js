@@ -10,7 +10,7 @@ const Home = () => {
 
     const getAboutMe = () => {
         axios.get('http://localhost:8080/api/about/home')
-            .then((res) => setAboutMe(res.data) || console.log('res', res.data))
+            .then((res) => setAboutMe(res.data))
     }
 
     useEffect(() => getAboutMe(), [])

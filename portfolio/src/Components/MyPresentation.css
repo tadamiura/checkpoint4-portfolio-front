@@ -1,4 +1,41 @@
 .about-me-presentation {
+    font-size: 14px;
+    margin: 10em 3em;
+    text-align: left;
+    max-width: none;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.footer-container {
+    background-image: linear-gradient(#ffc3ca,#a8a9e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
-    margin: 60px 300px 60px 100px;
+}
+
+
+.github, .linkedin, .mail{
+    /* padding: 10px 14px; */
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkedin:hover {
+    color: #0073a4;
+}
+
+.github:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.footer-links a {
+    color: #fff
 }
