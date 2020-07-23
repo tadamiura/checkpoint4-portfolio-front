@@ -25,8 +25,12 @@ const MyWorkList = () => {
                     <BurgerMenu />
                 </div>
                 <div className='myWorkList'>
-                    {myWorkList.map(list => 
-                    <Link className='project-link'><p >{list.project_title}</p></Link>
+                    {myWorkList.map((list,index) => 
+                    <Link className='project-link'>
+                        <h2 className='title-project'>{list.project_title}</h2>
+                    <h3 className='stack-duration'>{list.language}<br/>{list.duration}</h3>
+                    </Link>
+
                     )}
                 </div>
             </div>
