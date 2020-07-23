@@ -1,6 +1,6 @@
 .about-me-presentation {
     font-size: 14px;
-    margin: 10em 3em;
+    margin: 8em 3em;
     text-align: left;
     max-width: none;
     display: block;
@@ -17,7 +17,6 @@
 
 
 .github, .linkedin, .mail{
-    /* padding: 10px 14px; */
     -o-transition: 0.5s;
     -ms-transition: 0.5s;
     -moz-transition: 0.5s;

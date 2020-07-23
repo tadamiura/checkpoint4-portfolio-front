@@ -4,9 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub,
     faLinkedin 
 } from "@fortawesome/free-brands-svg-icons"
-import {
-    faEnvelope
-}  from '@fortawesome/free-solid-svg-icons'
 
 import axios from 'axios'
 import './MyPresentation.css'
@@ -26,9 +23,6 @@ const MyPresentation = () => {
         ? <p>Loading</p>
         : (
             <div>
-                <div>
-                    <BurgerMenu />
-                </div>
                 <div className='about-me-presentation'>
                     {presentation.map(text =>
                         <p>

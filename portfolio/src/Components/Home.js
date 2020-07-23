@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BurgerMenu from './BurgerMenu';  
+import BurgerMenu from './BurgerMenu';
 import axios from 'axios'
 
 import './Home.css'
@@ -19,19 +19,14 @@ const Home = () => {
     return aboutMe === null
         ? <p>Loading</p>
         : (
-            <div>
-                <div>
-                    <BurgerMenu />
-                </div>
-                <div className='about-me-home'>
-                    {aboutMe.map(me =>
-                        <div>
-                            <h1>{me.firstname}</h1>
-                            <h2>{me.lastname}</h2>
-                            <h3>{me.description}</h3>
-                        </div>
-                    )}
-                </div>
+            <div className='about-me-home'>
+                {aboutMe.map(me =>
+                    <div>
+                        <h1>{me.firstname}</h1>
+                        <h2>{me.lastname}</h2>
+                        <h3>{me.description}</h3>
+                    </div>
+                )}
             </div>
         )
 }
