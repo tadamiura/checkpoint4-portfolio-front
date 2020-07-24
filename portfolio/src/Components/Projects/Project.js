@@ -21,7 +21,7 @@ const Project = (props) => {
             {project.map( (info,index) =>
             <div className='container-project' key={info.id}>
                 <h2>{info.project_title}</h2>
-                <p>crée le : {info.date_creation}</p>
+                <p>crée le : {info.date}</p>
                 <p>{info.language}</p>
                 <p>{info.duration}</p>
                 <p>{info.project_description}</p>
