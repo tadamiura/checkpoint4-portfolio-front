@@ -8,7 +8,6 @@ const Project = (props) => {
         const [project, setProject] = useState(null)
     
         const getProject = () => {
-            const url = props.match.url
             axios.get(`http://localhost:8080/api/project/presentation`)
                 .then((res) => setProject(res.data))
         }
@@ -30,8 +29,6 @@ const Project = (props) => {
                 <a href={info.github_link} className='github-project'>Lien Github</a>
             </div>
                  )}
-                 {/* {console.log(props.match.url)}
-                 {project.map(info => <p>{info.project_title}</p>)} */}
         </div>
     )
 }

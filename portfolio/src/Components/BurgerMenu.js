@@ -1,5 +1,5 @@
 import React from 'react'
-import { stack as Menu } from 'react-burger-menu'
+import { bubble as Menu } from 'react-burger-menu'
 import './BurgerMenu.css'
 import { NavLink } from 'react-router-dom'
 
