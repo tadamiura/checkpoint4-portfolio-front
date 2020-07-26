@@ -21,9 +21,9 @@ const Home = () => {
             <div className='about-me-home'>
                 {aboutMe.map(me =>
                     <div>
-                        <h1>{me.firstname}</h1>
-                        <h2>{me.lastname}</h2>
-                        <h3>{me.description}</h3>
+                        <h1 className="my-firstname">{me.firstname}</h1>
+                        <h2 className="my-lastname">{me.lastname}</h2>
+                        <h3 className="my-description">{me.description}</h3>
                     </div>
                 )}
             </div>

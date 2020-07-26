@@ -7,3 +7,19 @@
     opacity: 1;
     color: #fff
 }
+
+.my-firstname {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.my-lastname {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.my-description {
+    font-style: italic;
+    font-weight: bold;
+} 
