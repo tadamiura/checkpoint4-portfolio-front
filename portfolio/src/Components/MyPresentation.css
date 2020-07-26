@@ -1,5 +1,10 @@
 .about-me-presentation {
-    font-size: 14px;
+    font-family: Roboto;
+    font-style: italic;
+    background-image: linear-gradient(#ffc3ca,#a8a9e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
     margin: 8em 3em;
     text-align: left;
     max-width: none;
@@ -13,6 +18,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -35,6 +41,11 @@
     background-color: #fff;
 }
 
-.footer-links a {
-    color: #fff
+.logo-container{
+    margin-top: 10px;
+font-size: x-large;
+}
+
+.logo-container a {
+    margin : 3px
 }

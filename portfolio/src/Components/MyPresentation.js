@@ -21,21 +21,23 @@ const MyPresentation = () => {
     return presentation === null
         ? <p>Loading</p>
         : (
-            <div>
+            <div> 
                 <div className='about-me-presentation'>
                     {presentation.map(text =>
-                        <p>
+                        <p key={text.id}>
                             {text.about}
                         </p>
                     )}
                 </div>
                 <footer className='footer-container'>
                     <p>N'hésitez pas à me suivre et me contacter</p>
-                    {presentation.map((lien, index) =>
-                    <div className='footer-links'>
-                        <a key={index} href={`mailto:${lien.email}`} classname='mail'>{lien.email}</a><br/>
-                        <a key={index} href={lien.github_profil} className='github'><FontAwesomeIcon icon={faGithub} size="lg" /></a>
-                        <a key={index} href={lien.linkedin_profil} className='linkedin'><FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
+                    {presentation.map(lien =>
+                    <div key={lien.id} className='footer-links'>
+                        <a href={`mailto:${lien.email}`} className='mail'>{lien.email}</a><br/>
+                        <div className='logo-container'>
+                        <a href={lien.github_profil} className='github'><FontAwesomeIcon icon={faGithub} size="lg" /></a>
+                        <a href={lien.linkedin_profil} className='linkedin'><FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
+                        </div>
                     </div>
                     )}
                  

@@ -5,8 +5,9 @@
     display: block;
     visibility: visible;
     opacity: 1;
-    color: #fff
-}
+    background-image: linear-gradient(#ffc3ca,#a8a9e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
 
 .my-firstname {
     margin-bottom: 0;

@@ -19,8 +19,8 @@ const Home = () => {
         ? <p>Loading</p>
         : (
             <div className='about-me-home'>
-                {aboutMe.map(me =>
-                    <div>
+                {aboutMe.map((me) => 
+                    <div key={me.id}>
                         <h1 className="my-firstname">{me.firstname}</h1>
                         <h2 className="my-lastname">{me.lastname}</h2>
                         <h3 className="my-description">{me.description}</h3>
