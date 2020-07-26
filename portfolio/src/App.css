@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
 .App{
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #fff;
     text-align: center;
 }
