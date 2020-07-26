@@ -20,13 +20,13 @@ const Project = (props) => {
         <div className='container-getProject'>
             {project.map( (info,index) =>
             <div className='container-project' key={info.id}>
-                <h2>{info.project_title}</h2>
-                <p>crée le : {info.date}</p>
-                <p>{info.language}</p>
-                <p>{info.duration}</p>
-                <p>{info.project_description}</p>
-                <img key={info.id} src={info.url_image} alt={info.project_title} className='image-project'></img><br/>
-                <a href={info.github_link} className='github-project'>Lien Github</a>
+                <h2 className='project-name'>{info.project_title}</h2>
+                <p className='project-date'>Créé le : {info.date}</p>
+                <p className='project-languages'>{info.language}</p>
+                <p className='project-duration'>Durée du projet : {info.duration}</p>
+                <p className='project-description'>Description : {info.project_description}</p>
+                <img className='image-project' src={info.url_image} alt={info.project_title} ></img><br/>
+                <a className='github-project' href={info.github_link} >Le lien Github</a>
             </div>
                  )}
         </div>
