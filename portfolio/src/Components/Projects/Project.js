@@ -18,7 +18,7 @@ const Project = (props) => {
     <p>Loading</p>
     :(
         <div className='container-getProject'>
-            {project.map( (info,index) =>
+            {project.map( info =>
             <div className='container-project' key={info.id}>
                 <h2 className='project-name'>{info.project_title}</h2>
                 <p className='project-date'>Créé le : {info.date}</p>
