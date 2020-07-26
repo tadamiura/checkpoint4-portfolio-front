@@ -7,3 +7,28 @@ form.update-about-me {
     visibility: visible;
     opacity: 1;
 }
+
+.testform {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-input{
+    width: 90%;
+    height: 25px;
+    outline: none;
+}
+
+.form-textarea {
+    width: 100%;
+    border: 2px solid var(--blue-color);
+    height: 300px;
+    outline: none;
+}
+
+@media screen and (min-width:640px) {
+    .form-input{
+        width: 30%;
+    }
+}

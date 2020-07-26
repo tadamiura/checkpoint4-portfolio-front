@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import './FormAboutMe'
+import './FormAboutMe.css'
 
 const UpdateAboutMe = () => {
     const [data, setData] = useState({
@@ -29,9 +29,9 @@ const UpdateAboutMe = () => {
         <div>
             <form className='update-about-me' onSubmit={handleSubmit}>
                 <h2 className='title-form'>Mettre à jour son texte de présentation</h2>
-                <textarea name='description' id='message-description' required className='form-textarea' rows="10" cols="30" onChange={handleChange}/><br />
+                <textarea name='description' id='message-description' required className='form-textarea' onChange={handleChange}/><br />
                 <h2 className='title-form'>Mettre à jour son texte de description dans About Me</h2>
-                <textarea name='about' id='message-about' required className='form-textarea' rows="10" cols="30" onChange={handleChange}/><br />
+                <textarea name='about' id='message-about' required className='form-textarea' onChange={handleChange}/><br />
                 <div className='testform'>
                     <label htmlFor='email'>e-mail</label>
                     <input type='email' name='email' id='email' required className='form-input' onChange={handleChange}/>
